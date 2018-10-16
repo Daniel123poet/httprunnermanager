@@ -1,0 +1,19 @@
+
+HttpRunnerManager
+
+
+异步执行
+1.cmd执行
+python manage.py celery -A HttpRunnerManager worker --loglevel=info
+
+2.cmd执行
+celery flower
+
+
+定时任务
+
+cmd执行
+python manage.py celery beat --loglevel=info
+
+之后再到HttpRunnerManager里新建测试套件
+
